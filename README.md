@@ -42,5 +42,10 @@ $ bb
 * ro 属性とか。
 * 効率的デバッグのための仕掛け。引数で ID, SERV を取れるなど。
 
+## UPDATE
+
+* [update 2018-04-21] github.com/hkim0331/blackboard-tmux.git
+* 2018-04-21 開発開始
+
 ---
 hiroshi . kimura . 0331 @ gmail . com
