@@ -10,7 +10,9 @@ client: bin
 	@echo check your PATH include ${HOME}/bin
 
 bin:
-	@mkdir ${HOME}/bin
+	if [ ! -d ${HOME}/bin ]; then \
+		@mkdir ${HOME}/bin; \
+	fi
 
 clean:
 	${RM} *~

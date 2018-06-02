@@ -4,8 +4,8 @@
 #
 # 2018-04-21
 
-UID=bb
-SERV=vm2018.local
+BB=bb
+SERV=vm2018
 TX=/usr/local/bin/tx
 
 usage() {
@@ -17,7 +17,7 @@ init() {
     if [ ! -f ~/.ssh/id_rsa.pub ]; then
       ssh-keygen
     fi
-    ssh-copy-id ${UID}@${SERV}
+    ssh-copy-id ${BB}@${SERV}
 }
 
 if [ "$1" = "--init" ]; then
@@ -25,5 +25,5 @@ if [ "$1" = "--init" ]; then
 elif [ "$1" = "--help" ]; then
     usage
 else
-    ssh ${UID}@${SERV} -t ${TX}
+    ssh ${BB}@${SERV} -t ${TX}
 fi
